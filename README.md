@@ -1,6 +1,9 @@
 # 轻量全景浏览器
 基于 PyQt5 + OpenGL 实现的本地全景图片查看器，支持标准等矩形投影全景图，体积极小、加载快速。
 
+pyinstaller -w -F --clean --icon=pano.ico --add-data "pano.ico;." --name "全景浏览器" --hidden-import OpenGL --hidden-import OpenGL.GL --hidden-import OpenGL.GLU panoviewer_light.py
+
+
 ## 功能特性
 - ✅ 支持 720° 等矩形全景图浏览（宽高比 2:1）
 - ✅ 鼠标拖拽旋转视角，滚轮缩放视野
